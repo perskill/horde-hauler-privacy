@@ -49,9 +49,11 @@
       <h2 id="zh-title">简体中文</h2>
       <p>本政策由开发者 PikukaLuda 提供，适用于《末路重载 Horde Hauler》包含激励视频广告的 Android 版本，直到本政策更新为止。Windows 版不含广告，也不联网。</p>
       <h3>1. 游戏本身</h3>
-      <p>游戏没有账号、内购、统计分析或崩溃上报组件。开发者不接收、出售或共享你的个人信息，也不接收下述本机游戏数据。只有你主动点按“看广告”时才会播放激励视频；战斗中不会弹出广告，不看广告也能完整游玩。</p>
+      <p>游戏没有账号或内购；开发者未另行接入独立的统计分析或崩溃上报组件。广告 SDK 自身的数据处理见下文。开发者不直接接收或出售你的个人信息，也不接收下述本机游戏数据。只有你主动点按“看广告”时才会播放激励视频；战斗中不会弹出广告，不看广告也能完整游玩。</p>
       <h3>2. 广告服务（Google AdMob）</h3>
       <p>广告由 Google AdMob 提供，使用 Google 移动广告 SDK 与用户消息平台（UMP）。为了投放广告、统计广告效果和防止欺诈，这些组件会自动收集以下数据并发送给 Google：IP 地址（可用于估算大致位置）、与应用和广告的互动（如启动、点按、视频观看）、诊断信息（如加载时间、卡顿与耗电）、设备标识符（Android 广告 ID、应用集 ID）。数据经加密连接（TLS）传输，由 Google 按其政策处理，详见 <a href="https://policies.google.com/technologies/partner-sites">Google 如何使用来自使用其服务的网站或应用的信息</a>。</p>
+      <p>广告 SDK 还可能将涉及自身的异常或崩溃堆栈发送给 Google，用于诊断问题；是否发送取决于 SDK 的配置、筛选和抽样。</p>
+      <p>游戏启动时会检查同意状态，并可能在奖励界面预加载广告，因此广告服务的数据处理可能早于你点按“看广告”；广告播放仍需你主动点按。</p>
       <p>因此含广告的 Android 安装包需要网络权限与广告 ID 权限。你可以在 Android 系统设置中重置或删除广告 ID。</p>
       <p>广告 SDK 还在安装包中声明了 Android 的 READ_BASIC_PHONE_STATE 普通权限，允许读取蜂窝网络类型、软件版本等基础手机状态；这类权限由系统自动授予，无需运行时授权提示。该权限不等同于 READ_PHONE_STATE，也不授予读取电话号码、通话记录或通讯录的权限。仅凭这项权限声明，不能确定这些基础状态是否被实际读取或上传。</p>
       <h3>3. 同意与隐私选项</h3>
@@ -74,9 +76,11 @@
       <h2 id="en-title">English</h2>
       <p>This policy is provided by PikukaLuda for the Android versions of Horde Hauler that include rewarded video ads, until it is updated. The Windows version has no ads and does not go online.</p>
       <h3>1. The game itself</h3>
-      <p>The game has no accounts, in-app purchases, analytics or crash reporting. The developer does not receive, sell or share your personal information, and does not receive the local game data described below. A rewarded video plays only when you tap “Watch ad”; ads never pop up during combat, and the whole game can be played without watching any.</p>
+      <p>The game has no accounts or in-app purchases. The developer has not separately integrated standalone analytics or crash-reporting components; the ad SDK's own data handling is described below. The developer does not directly receive or sell your personal information, and does not receive the local game data described below. A rewarded video plays only when you tap “Watch ad”; ads never pop up during combat, and the whole game can be played without watching any.</p>
       <h3>2. Ad service (Google AdMob)</h3>
       <p>Ads are provided by Google AdMob, using the Google Mobile Ads SDK and the User Messaging Platform (UMP). To serve ads, measure them and prevent fraud, these components automatically collect the following and send it to Google: IP address (which may be used to estimate general location), app and ad interactions (such as launches, taps and video views), diagnostic information (such as load time, hangs and energy use), and device identifiers (the Android advertising ID and app set ID). The data is encrypted in transit (TLS) and handled by Google under its policies; see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+      <p>The ad SDK may also send Google exception or crash stack traces involving the SDK to diagnose problems, subject to its configuration, filtering and sampling.</p>
+      <p>Consent checks run at startup, and ads may be preloaded on reward screens, so ad-service data processing can occur before you tap "Watch ad". Playback still requires your tap.</p>
       <p>The Android package with ads therefore requests network access and the advertising ID permission. You can reset or delete the advertising ID in Android's system settings.</p>
       <p>The ad SDK also declares Android's READ_BASIC_PHONE_STATE normal permission in the package. It allows access to basic phone state, such as cellular network type and software version, and is granted automatically without a runtime permission prompt. It is distinct from READ_PHONE_STATE and does not grant access to phone numbers, call logs or contacts. The declaration alone does not establish whether this basic state is actually read or uploaded.</p>
       <h3>3. Consent and privacy options</h3>

@@ -55,11 +55,11 @@
       <p>广告 SDK 还可能将涉及自身的异常或崩溃堆栈发送给 Google，用于诊断问题；是否发送取决于 SDK 的配置、筛选和抽样。</p>
       <p>游戏启动时会检查同意状态，并可能在奖励界面预加载广告，因此广告服务的数据处理可能早于你点按“看广告”；广告播放仍需你主动点按。</p>
       <p>因此含广告的 Android 安装包需要网络权限与广告 ID 权限。你可以在 Android 系统设置中重置或删除广告 ID。</p>
-      <p>广告 SDK 还在安装包中声明了 Android 的 READ_BASIC_PHONE_STATE 普通权限，允许读取蜂窝网络类型、软件版本等基础手机状态；这类权限由系统自动授予，无需运行时授权提示。该权限不等同于 READ_PHONE_STATE，也不授予读取电话号码、通话记录或通讯录的权限。仅凭这项权限声明，不能确定这些基础状态是否被实际读取或上传。</p>
+      <p>广告 SDK 还在安装包中声明了 Android 的 READ_BASIC_PHONE_STATE 普通权限，允许读取蜂窝网络类型、软件版本等基础手机状态；这类权限由系统自动授予，无需运行时授权提示。该权限不等同于 READ_PHONE_STATE，也不授予读取电话号码、通话记录或通讯录的权限。</p>
       <h3>3. 同意与隐私选项</h3>
       <p>游戏每次启动都会刷新隐私选择状态，并在 Google 要求时显示同意表单（例如欧洲经济区、英国和瑞士）。只有完成所需隐私选择流程且 SDK 允许请求时，游戏才会请求广告。Google 会依据你的选择及适用规则提供个性化、非个性化或有限广告，也可能不投放广告。需要时，可在游戏内“选项 → 隐私选项”中随时更改选择。拒绝或撤回同意不影响游戏其他部分，免费复活与免费重抽始终可用。</p>
       <h3>4. 保存在设备上的数据</h3>
-      <p>游戏仅在设备上的应用私有存储空间保存当前一局的进度（自动存档及其备份，包括本局是否已领取广告奖励）、研发进度与战绩，以及声音、显示、语言和新手提示设置。这些数据用于继续游戏和保留你的设置，由游戏在本机读取。游戏不访问通讯录、相册、位置、麦克风或其他应用的数据。</p>
+      <p>游戏仅在设备上的应用私有存储空间保存当前一局的进度（自动存档及其备份，包括本局是否已领取广告奖励）、研发进度、成就与战绩，以及声音、显示、语言、难度和新手提示设置。这些数据用于继续游戏和保留你的设置，由游戏在本机读取。游戏不访问通讯录、相册、位置、麦克风或其他应用的数据。</p>
       <p>Android 版已关闭系统自动备份。上述数据保留在你的设备上，直到你卸载游戏或在系统设置中清除本应用的数据；执行其中任一操作都会删除这些数据。游戏没有服务器账户或云端副本供开发者保留或删除。</p>
       <h3>5. 外部链接</h3>
       <p>“素材许可”页中的作者链接只在你主动点击时交给系统浏览器打开。访问外部网站后，该网站可能按其自身隐私政策处理数据。除上述广告服务外，游戏本身不发送网络请求。</p>
@@ -82,11 +82,11 @@
       <p>The ad SDK may also send Google exception or crash stack traces involving the SDK to diagnose problems, subject to its configuration, filtering and sampling.</p>
       <p>Consent checks run at startup, and ads may be preloaded on reward screens, so ad-service data processing can occur before you tap "Watch ad". Playback still requires your tap.</p>
       <p>The Android package with ads therefore requests network access and the advertising ID permission. You can reset or delete the advertising ID in Android's system settings.</p>
-      <p>The ad SDK also declares Android's READ_BASIC_PHONE_STATE normal permission in the package. It allows access to basic phone state, such as cellular network type and software version, and is granted automatically without a runtime permission prompt. It is distinct from READ_PHONE_STATE and does not grant access to phone numbers, call logs or contacts. The declaration alone does not establish whether this basic state is actually read or uploaded.</p>
+      <p>The ad SDK also declares Android's READ_BASIC_PHONE_STATE normal permission in the package. It allows access to basic phone state, such as cellular network type and software version, and is granted automatically without a runtime permission prompt. It is distinct from READ_PHONE_STATE and does not grant access to phone numbers, call logs or contacts.</p>
       <h3>3. Consent and privacy options</h3>
       <p>At each launch, the game refreshes the status of your privacy choices and shows Google's consent form when required (for example in the European Economic Area, the UK and Switzerland). Ads are requested only after any required privacy-choice process is complete and the SDK allows requests. Depending on your choices and applicable requirements, Google may serve personalized, non-personalized or limited ads, or serve no ads. When required, you can change your choice at any time under “Options → Privacy options” in the game. Declining or withdrawing consent does not affect the rest of the game; the free revive and free rerolls are always available.</p>
       <h3>4. Data stored on your device</h3>
-      <p>The game stores only on your device the progress of your current run (autosave and its backup, including whether this run's ad rewards were claimed), research progress and records, and sound, display, language and tutorial-tip settings. This data is used to continue your game and remember your preferences. It is kept in the app's private storage and read locally by the game. The game does not access your contacts, photos, location, microphone or other apps' data.</p>
+      <p>The game stores only on your device the progress of your current run (autosave and its backup, including whether this run's ad rewards were claimed), research progress, achievements and records, and sound, display, language, difficulty and tutorial-tip settings. This data is used to continue your game and remember your preferences. It is kept in the app's private storage and read locally by the game. The game does not access your contacts, photos, location, microphone or other apps' data.</p>
       <p>Android system auto-backup is disabled. This data remains on your device until you uninstall the game or clear its app data in system settings; either action deletes it. There is no server account or cloud copy for the developer to retain or delete.</p>
       <h3>5. External links</h3>
       <p>Author links on the Credits page open in the system browser only when you tap them. External websites may process data under their own privacy policies. Apart from the ad service above, the game itself sends no network requests.</p>
